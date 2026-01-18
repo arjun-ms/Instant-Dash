@@ -4,7 +4,7 @@ A simple web application that transforms JSON data into beautiful, functional da
 
 ![AI Instant Dashboard Demo](assets/office-spending.png)
 
-[View More Test Results](#-sample-test-results)
+[View More Test Results](#%EF%B8%8F-sample-test-results)
 
 [Live Demo](https://instant-dash.vercel.app/)
 
@@ -84,7 +84,8 @@ The application includes a built-in example based on the technical assessment re
 ### AI Model Used
 - **Model**: Gemini 1.5 Flash (`gemini-1.5-flash`)
 - **API**: Google Generative Language API
-- **Max Tokens**: 8192
+- **Deployment**: Vercel (Serverless Functions)
+- **Port**: 3000 (Local) / Dynamic (Vercel)
 
 ### System Architecture
 ```
@@ -109,7 +110,10 @@ instant-dash/
 │   ├── index.html      # Main app interface
 │   ├── style.css       # Clean, modern UI styling
 │   └── script.js       # Core logic & module imports
-├── server.js           # Secure Express proxy for API
+├── api/
+│   └── generate.js     # Vercel Serverless Function
+├── server.js           # Local Express proxy for API
+├── vercel.json         # Vercel deployment config
 ├── package.json        # Project dependencies
 └── README.md           # Documentation
 ```
