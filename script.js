@@ -1,3 +1,6 @@
+import { SYSTEM_PROMPT } from './config/systemPrompt.js';
+import { EXAMPLE_DATA, EXAMPLE_PROMPT } from './data/exampleData.js';
+
 // DOM Elements
 const apiKeyInput = document.getElementById('apiKey');
 const jsonInput = document.getElementById('jsonInput');
@@ -9,39 +12,6 @@ const previewFrame = document.getElementById('previewFrame');
 const previewPlaceholder = document.getElementById('previewPlaceholder');
 const btnText = document.getElementById('btnText');
 const btnLoader = document.getElementById('btnLoader');
-
-// System Prompt for Gemini
-const SYSTEM_PROMPT = `You are an expert frontend developer specializing in creating beautiful, functional dashboards.
-
-Your task is to generate a complete, single-page HTML dashboard based on the provided JSON data and user instructions.
-
-CRITICAL RULES:
-1. Output ONLY valid HTML code - no explanations, no markdown, no code fences like \`\`\`html
-2. Include ALL styling within <style> tags in the HTML
-3. Use the EXACT data from the JSON - do not hallucinate or make up numbers
-4. Create a fully self-contained HTML document (no external dependencies)
-5. Make it visually appealing with modern design principles
-6. Use inline CSS within the HTML <style> tag
-7. Make it responsive and professional-looking
-8. If charts are requested, create them using HTML/CSS (no external libraries)
-9. Start directly with <!DOCTYPE html> - no preamble or explanation text
-10. Do NOT wrap the HTML in code blocks or backticks
-
-The HTML should be production-ready and render perfectly in a browser.`;
-
-// Example Data
-const EXAMPLE_DATA = {
-    report_title: "Monthly Office Spending",
-    currency: "USD",
-    expenses: [
-        { item: "High-speed Internet", amount: 250 },
-        { item: "Coffee & Snacks", amount: 400 },
-        { item: "Software Subscriptions", amount: 1200 },
-        { item: "Office Electricity", amount: 350 }
-    ]
-};
-
-const EXAMPLE_PROMPT = "Create a clean business dashboard. Show a total spending summary at the top and a simple table below for the items. Use a professional font and light grey background.";
 
 // Load Example Data
 loadExampleBtn.addEventListener('click', () => {
