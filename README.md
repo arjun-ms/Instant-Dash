@@ -4,6 +4,8 @@ A simple web application that transforms JSON data into beautiful, functional da
 
 ![AI Instant Dashboard Demo](public/assets/office-spending.png)
 
+[View More Test Results](#-sample-test-results)
+
 ## 🚀 Features
 
 - **Instant Generation**: Convert JSON data to visual dashboards in seconds
@@ -20,15 +22,23 @@ A simple web application that transforms JSON data into beautiful, functional da
 
 1. **Clone or download this repository**
    ```bash
-   git clone <your-repo-url>
-   cd instant-dashboard
+   git clone https://github.com/arjun-ms/Instant-Dash.git
+   cd Instant-Dash
    ```
 
-2. **Open the application**
-   - Simply open `index.html` in your web browser
-   - No build process or server required!
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-3. **Get your API key**
+3. **Start the Server**
+   ```bash
+   npm start
+   ```
+   - Open your browser to `http://localhost:3000`
+   - This local server is required to handle API proxying and modular JavaScript.
+
+4. **Get your API key**
    - Visit [aistudio.google.com](https://aistudio.google.com/app/apikey)
    - Create an account or sign in
    - Generate an API key
@@ -87,17 +97,19 @@ User Input (JSON + Prompt)
 
 ### File Structure
 ```
-instant-dashboard/
-├── public/
-│   ├── assets/         # Demo screenshots
-│   ├── config/         # System prompt config
-│   ├── data/           # Example JSON data
-│   ├── index.html      # Main HTML structure
-│   ├── style.css       # Styling and layout
-│   └── script.js       # Application logic
-├── server.js           # Node.js proxy server
-├── package.json        # Dependencies
-└── README.md           # This file
+instant-dash/
+├── public/             # Client-side files
+│   ├── assets/         # Demo screenshots & results
+│   ├── config/
+│   │   └── systemPrompt.js # AI role & generation rules
+│   ├── data/
+│   │   └── exampleData.js  # Starter JSON datasets
+│   ├── index.html      # Main app interface
+│   ├── style.css       # Clean, modern UI styling
+│   └── script.js       # Core logic & module imports
+├── server.js           # Secure Express proxy for API
+├── package.json        # Project dependencies
+└── README.md           # Documentation
 ```
 
 ## 🔒 Privacy & Security
@@ -154,5 +166,31 @@ If you encounter any issues:
 4. Try the example data first
 
 ---
+
+---
+
+## 🖼️ Sample Test Results
+
+Here are more examples of dashboards generated using different datasets and instructions:
+
+### 📈 E-commerce Sales Analytics
+Detailed breakdown of sales performance and trends.
+![E-commerce Sales](public/assets/ecom-sales.png)
+
+### 🍔 Restaurant Analytics
+Visualizing menu performance and customer demographics.
+![Restaurant Analytics](public/assets/restaurant-analytics.png)
+
+### 🌦️ Weather Forecast
+Clean UI for meteorological data.
+![Weather](public/assets/weather.png)
+
+### 🎓 Student Grade Report
+Educational dashboard for tracking academic progress.
+![Student Grade Report](public/assets/student-grade-report.png)
+
+### 🏃 Daily Steps Tracker
+Personal health and fitness visualization.
+![Daily Steps](public/assets/daily-steps.png)
 
 **Built with ❤️ using Vanilla JavaScript and Google Gemini**

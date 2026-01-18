@@ -51,6 +51,9 @@ generateBtn.addEventListener('click', async () => {
     } catch (e) {
         showError('Invalid JSON format. Please check your JSON syntax.');
         return;
+        // The function returns immediately after showing the error, 
+        // so no request is sent to the Gemini API, 
+        // saving you from unnecessary token usage.
     }
     
     // Start loading
