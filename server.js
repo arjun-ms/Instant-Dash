@@ -1,17 +1,22 @@
-// Simple Express server to proxy Gemini API calls
 const express = require('express');
 const cors = require('cors');
 const fetch = require('node-fetch');
+const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Enable CORS for all origins
 app.use(cors());
 app.use(express.json());
 
-// Serve static files from the public directory
-app.use(express.static('public'));
+// Serve static files from the public directory using absolute paths
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Explicit route for the home page to prevent "Cannot GET /"
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Proxy endpoint for Gemini API
 app.post('/api/generate', async (req, res) => {
