@@ -2,7 +2,7 @@
 
 A simple web application that transforms JSON data into beautiful, functional dashboards using AI.
 
-![AI Instant Dashboard Demo](assets/test1.png)
+![AI Instant Dashboard Demo](public/assets/office-spending.png)
 
 ## 🚀 Features
 
@@ -88,9 +88,15 @@ User Input (JSON + Prompt)
 ### File Structure
 ```
 instant-dashboard/
-├── index.html          # Main HTML structure
-├── style.css           # Styling and layout
-├── script.js           # Application logic and API integration
+├── public/
+│   ├── assets/         # Demo screenshots
+│   ├── config/         # System prompt config
+│   ├── data/           # Example JSON data
+│   ├── index.html      # Main HTML structure
+│   ├── style.css       # Styling and layout
+│   └── script.js       # Application logic
+├── server.js           # Node.js proxy server
+├── package.json        # Dependencies
 └── README.md           # This file
 ```
 

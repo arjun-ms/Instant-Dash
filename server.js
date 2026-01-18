@@ -10,8 +10,8 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
-// Serve static files (HTML, CSS, JS)
-app.use(express.static('.'));
+// Serve static files from the public directory
+app.use(express.static('public'));
 
 // Proxy endpoint for Gemini API
 app.post('/api/generate', async (req, res) => {
