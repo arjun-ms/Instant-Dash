@@ -2,7 +2,7 @@
 
 A simple web application that transforms JSON data into beautiful, functional dashboards using AI.
 
-![AI Instant Dashboard Demo](public/assets/office-spending.png)
+![AI Instant Dashboard Demo](assets/office-spending.png)
 
 [View More Test Results](#-sample-test-results)
 
@@ -159,19 +159,19 @@ The application handles:
 Here are more examples of dashboards generated using different datasets and instructions:
 
 ### 📈 E-commerce Sales Analytics
-![E-commerce Sales](public/assets/ecom-sales.png)
+![E-commerce Sales](assets/ecom-sales.png)
 
 ### 🍔 Restaurant Analytics
-![Restaurant Analytics](public/assets/restaurant-analytics.png)
+![Restaurant Analytics](assets/restaurant-analytics.png)
 
 ### 🌦️ Weather Forecast
-![Weather](public/assets/weather.png)
+![Weather](assets/weather.png)
 
 ### 🎓 Student Grade Report
-![Student Grade Report](public/assets/student-grade-report.png)
+![Student Grade Report](assets/student-grade-report.png)
 
 ### 🏃 Daily Steps Tracker
-![Daily Steps](public/assets/daily-steps.png)
+![Daily Steps](assets/daily-steps.png)
 
 
 ## 📝 License
