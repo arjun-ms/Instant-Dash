@@ -153,6 +153,27 @@ The application handles:
 3. **Test with simple data** first
 4. **Iterate on prompts** if the first result isn't perfect
 
+
+## 🖼️ Sample Test Results
+
+Here are more examples of dashboards generated using different datasets and instructions:
+
+### 📈 E-commerce Sales Analytics
+![E-commerce Sales](public/assets/ecom-sales.png)
+
+### 🍔 Restaurant Analytics
+![Restaurant Analytics](public/assets/restaurant-analytics.png)
+
+### 🌦️ Weather Forecast
+![Weather](public/assets/weather.png)
+
+### 🎓 Student Grade Report
+![Student Grade Report](public/assets/student-grade-report.png)
+
+### 🏃 Daily Steps Tracker
+![Daily Steps](public/assets/daily-steps.png)
+
+
 ## 📝 License
 
 This project is created for the technical assessment.
@@ -165,32 +186,5 @@ If you encounter any issues:
 3. Check browser console for errors
 4. Try the example data first
 
----
-
----
-
-## 🖼️ Sample Test Results
-
-Here are more examples of dashboards generated using different datasets and instructions:
-
-### 📈 E-commerce Sales Analytics
-Detailed breakdown of sales performance and trends.
-![E-commerce Sales](public/assets/ecom-sales.png)
-
-### 🍔 Restaurant Analytics
-Visualizing menu performance and customer demographics.
-![Restaurant Analytics](public/assets/restaurant-analytics.png)
-
-### 🌦️ Weather Forecast
-Clean UI for meteorological data.
-![Weather](public/assets/weather.png)
-
-### 🎓 Student Grade Report
-Educational dashboard for tracking academic progress.
-![Student Grade Report](public/assets/student-grade-report.png)
-
-### 🏃 Daily Steps Tracker
-Personal health and fitness visualization.
-![Daily Steps](public/assets/daily-steps.png)
 
 **Built with ❤️ using Vanilla JavaScript and Google Gemini**
