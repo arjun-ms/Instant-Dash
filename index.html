@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Instant Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel: Inputs -->
+        <div class="input-panel">
+            <div class="header">
+                <h1>The Instant Dashboard</h1>
+                <p>Transform JSON data into visual dashboards instantly</p>
+            </div>
+
+            <!-- API Key Input -->
+            <div class="input-group">
+                <label for="apiKey">Gemini API Key</label>
+                <input 
+                    type="password" 
+                    id="apiKey" 
+                    placeholder="AIzaSy..." 
+                    autocomplete="off"
+                >
+                <small>Get your API key from <a href="https://aistudio.google.com/app/apikey" target="_blank">aistudio.google.com</a></small>
+            </div>
+
+            <!-- JSON Input -->
+            <div class="input-group">
+                <label for="jsonInput">JSON Data</label>
+                <textarea 
+                    id="jsonInput" 
+                    placeholder='{"report_title": "Sales Data", "items": [...]}'
+                    rows="10"
+                ></textarea>
+            </div>
+
+            <!-- User Prompt -->
+            <div class="input-group">
+                <label for="userPrompt">Dashboard Instructions</label>
+                <textarea 
+                    id="userPrompt" 
+                    placeholder="Create a clean business dashboard with charts..."
+                    rows="4"
+                ></textarea>
+            </div>
+
+            <!-- Generate Button -->
+            <button id="generateBtn" class="generate-btn">
+                <span id="btnText">Generate Dashboard</span>
+                <span id="btnLoader" class="loader" style="display: none;"></span>
+            </button>
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+            <!-- Load Example Button -->
+            <button id="loadExampleBtn" class="example-btn">
+                Load Example Data
+            </button>
+        </div>
+
+        <!-- Right Panel: Preview -->
+        <div class="preview-panel">
+            <div class="preview-header">
+                <h2>Dashboard Preview</h2>
+            </div>
+            <div class="preview-container">
+                <iframe id="previewFrame" sandbox="allow-same-origin"></iframe>
+                <div id="previewPlaceholder" class="preview-placeholder">
+                    <div class="placeholder-content">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="9" x2="15" y2="9"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                        <h3>No Dashboard Yet</h3>
+                        <p>Enter your JSON data and prompt, then click "Generate Dashboard" to see the magic happen!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
