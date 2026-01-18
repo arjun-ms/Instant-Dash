@@ -6,6 +6,8 @@ A simple web application that transforms JSON data into beautiful, functional da
 
 [View More Test Results](#-sample-test-results)
 
+[Live Demo](https://instant-dash.vercel.app/)
+
 ## 🚀 Features
 
 - **Instant Generation**: Convert JSON data to visual dashboards in seconds
